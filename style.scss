@@ -593,32 +593,32 @@ main{
         // rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, 
         // rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
       }
-      // @keyframes spin {
-      //   0% {
-      //     transform: rotateY(0deg);
-      //   }
-      //   100% {
-      //     transform: rotateY(-360deg);
-      //   }
-      // }
-      // @keyframes depth {
-      //   0% {
-      //     text-shadow: 0 0 black;
-      //   }
-      //   25% {
-      //     text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
-      //   }
-      //   50% {
-      //     text-shadow: 0 0 black;
-      //   }
-      //   75% {
-      //     text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
-      //       -5px 0 black;
-      //   }
-      //   100% {
-      //     text-shadow: 0 0 black;
-      //   }
-      // }
+      @keyframes spin {
+        0% {
+          transform: rotateY(0deg);
+        }
+        100% {
+          transform: rotateY(-360deg);
+        }
+      }
+      @keyframes depth {
+        0% {
+          text-shadow: 0 0 black;
+        }
+        25% {
+          text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+        }
+        50% {
+          text-shadow: 0 0 black;
+        }
+        75% {
+          text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+            -5px 0 black;
+        }
+        100% {
+          text-shadow: 0 0 black;
+        }
+      }
       
       .wr2:hover{
         background-color: $accent-color2 !important;

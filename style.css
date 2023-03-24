@@ -585,31 +585,6 @@ main {
   background-color: #FF66B3;
   transition: 2s;
 }
-@keyframes spin {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(-360deg);
-  }
-}
-@keyframes depth {
-  0% {
-    text-shadow: 0 0 black;
-  }
-  25% {
-    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
-  }
-  50% {
-    text-shadow: 0 0 black;
-  }
-  75% {
-    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
-  }
-  100% {
-    text-shadow: 0 0 black;
-  }
-}
 .main-stat-wrap .main-stat-place-cont .main-stat-subcont .wr2:hover, .main-stat-wrap .main-stat-place-cont .stat-chart .stat-chart-subcont .wr2:hover, .stat-chart .main-stat-wrap .main-stat-place-cont .stat-chart-subcont .wr2:hover, .main-stat-wrap .main-stat-place-cont .main-stat-rat-subcont .wr2:hover {
   background-color: #42BFDD !important;
 }

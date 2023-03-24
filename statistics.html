@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>StudScore</title>
+</head>
+<body>
+    <header class="header"> 
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <div class="logo-cont logo">
+            <h1 class="logo-text">StudScore</h1>
+            <h2 class="username-block">Кудибовська Анастасія
+                <p class="rating-mark-block">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+            </h2>
+        </div>
+        <nav class="custom-navb">
+            <ul class="menu">
+                <li style="padding-top: 1.5rem;"><a href="statistics.html"><i class='fa fa-line-chart'></i>Статистика</a></li>
+                <!-- <li><a href="#"><i class='fa fa-book'></i>Навчальні матеріали</a> </li> -->
+                <li><a href="profile.html"><i class='fa fa-user'></i>Профіль</a></li>
+                <li><a href="contacts.html"><i class='fa fa-phone'></i>Контакти</a></li>
+                <hr/>
+                <li><a href="index.html"><i class='fa fa-sign-out'></i>Вийти</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-stat-wrap">
+            <div class="main-stat-place-cont">
+                <div class="main-stat-subcont">
+                    <h2 class="h2-place">Місце у групі</h2>
+                    <div style="filter:drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.2)) drop-shadow( 0px 7px 9px  rgba(0, 0, 0, 0.14));">
+                    <div class="place-wrap">
+                        <p>3</p>
+                    </div></div>
+                </div>
+                <div class="main-stat-subcont">
+                    <h2 class="h2-place">Місце на потоці</h2>
+                    <div style="filter:drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.2)) drop-shadow( 0px 7px 9px  rgba(0, 0, 0, 0.14));">
+                        <div class="place-wrap wr2" style="background: #FF66B3;">
+                            <p>17</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-stat-cont-wrap">
+            <div class="main-stat-cont">
+                <div class="main-stat-rat-subcont">
+                    <div class="rat-title-cont">
+                        <h2 class="h2-place">Таблиця лідерів</h2>
+                        <div class="button-block">
+                            <button class="active" data-target="#group-rating">Група</button>
+                            <button data-target="#stream-rating">Потік</button>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="stud-rat">
+                        <ol>
+                            <div class="self-stud-rat">
+                                <li>Гончаренко Артем</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">97.933 <i class="fa fa-star" aria-hidden="true"></i></p>  
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Шевченко Олексій</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">95.833 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <b><li class="fw-bold" >Кудибовська Анастасія</li></b>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block3">4.8 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block2">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Павлюк Юлія</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0 ">4.8  <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">89.046 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Мельник Сергій</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0 rating-mark-block0-gem">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">88.982 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Ковальчук Владислав</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0 rating-mark-block0-gem ">4.8 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">87.652 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Козак Вікторія</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">4.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Бондаренко Марія</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Горбачук Максим</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Іваненко Андрій</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Литвиненко Олександр</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Денисенко Катерина</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Олійник Олег</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Савченко Володимир</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Ткачук Надія</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Григоренко Іван</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Данилюк Ігор</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Романенко Юлія</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                            
+                            <div class="self-stud-rat">
+                                <li>Ганенко Аліна</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                        </ol>
+                        
+                    </div>   
+
+                </div>
+            </div>
+            <div class="main-stat-rat-subcont">
+                <div class="rat-title-cont">
+                    <h2 class="h2-place">Оцінки</h2>
+                </div>
+                <hr/>
+                <div class="stud-rat">
+                    <div class="stud-mark-day">
+                        <h2>22.01.2023</h2>
+                        <div class="mark-day-box">
+                            <div class="mark-day-box-text">
+                                <p>Веб-технології та веб-дизайн</p>
+                                <p>Пшеничний О. Ю.</p>
+                            </div>
+                            <p class="rating-mark-block">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                    <div class="stud-mark-day">
+                        <h2>21.01.2023</h2>
+                        <div class="mark-day-box">
+                            <div class="mark-day-box-text">
+                                <p class="bad-m-text">Фізичне виховання</p>
+                                <p>Зелікова Т. І.</p>
+                            </div>
+                            <p class="rating-mark-block bad-m-icon">2.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="mark-day-box">
+                            <div class="mark-day-box-text">
+                                <p>Математичні методи дослідження операцій</p>
+                                <p>Шиманський В. М.</p>
+                            </div>
+                            <p class="rating-mark-block">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                    <div class="stud-mark-day">
+                        <h2>19.01.2023</h2>
+                        <div class="mark-day-box">
+                            <div class="mark-day-box-text">
+                                <p>Теорія інформації</p>
+                                <p>Косаревич Р. Я.</p>
+                            </div>
+                            <p class="rating-mark-block">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="mark-day-box">
+                            <div class="mark-day-box-text">
+                                <p>Комп'ютерні мережі</p>
+                                <p>Нич Л. Я.</p>
+                            </div>
+                            <p class="rating-mark-block">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <div class="motivation-block-wrap">
+    <div class="motivation-block">
+        Always be
+        <div id=flip>
+          <div><div>learning</div></div>
+          <div><div>coding</div></div>
+          <div><div>creating</div></div>
+        </div>
+    </div></div>
+    <div class="stat-chart">
+        <div class="stat-chart-subcont">
+            <div class="rat-title-cont">
+                <h2 class="h2-place">Середній бал</h2>
+                <div class="stat-chart-mark">
+                    <p class="rating-mark-block">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+                    <p class="rating-mark-block">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                </div>
+                
+            </div><hr/>
+            <img src="images/average-marks.PNG" alt="chart">
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h1 class="logo-text">StudScore</h1>
+              <p class="text-justify" style="padding-right: 3rem;">Ми допоможемо відслідковувати свій прогрес, покращувати результати навчання та краще підготуватись до
+                 занять та іспитів. Ви зможете переглядати свої оцінки та рейтинг, зконтактуватись з викладачи, а також мати цілодобовий доступ до навчальних матеріалів. </p>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+                <h6 class="child2">Лінки</h6>
+              <ul class="footer-links">
+                <li><a href="statistics.html"><i class='fa fa-line-chart'></i>Статистика</a></li>
+                <!-- <li><a href=""><i class='fa fa-book'></i>Навчальні матеріали</a> </li> -->
+                <li><a href="profile.html"><i class='fa fa-user'></i>Профіль</a></li>
+                <li><a href="contacts.html"><i class='fa fa-phone'></i>Контакти</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6 class="child2">Контактна інформація</h6>
+              <ul class="footer-links">
+                <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> м. Львів</a></li>
+                <li><a href=""><i class='fa fa-phone'></i>+380 73 222 17 93</a></li>
+                <li><a href=""><i class="fa fa-envelope"></i>support@studscore.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p>Copyright &copy; 2023 All Rights Reserved by 
+           <a class="copyright-text"href="#">StudScore</a>.
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="github" href="#"><i class="fa fa-github" ></i></a></li>
+                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+  </footer>
+   
+    
+</body>
+</html>

@@ -19,7 +19,6 @@
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  min-width: 100vw;
   background-image: url(images/5.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -276,6 +275,7 @@
   flex-direction: row;
   align-items: center;
   font-weight: lighter;
+  align-content: center;
 }
 @media screen and (min-width: 415px) and (max-width: 620px) {
   .username-block {
@@ -292,10 +292,13 @@
     flex-direction: column;
   }
 }
+.username-block p {
+  margin-bottom: 0;
+}
 
 .rating-mark-block {
   padding: 0.35rem 0.75rem;
-  margin: 0.75rem;
+  margin: 0 0.75rem;
   font-weight: bold;
   font-family: "Lora", serif;
   background-color: #BBE6E4;
@@ -305,11 +308,20 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
   transition: box-shadow 0.3s;
   color: #253237;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 620px) {
   .rating-mark-block {
     font-size: 0.95rem;
   }
+}
+.rating-mark-block i {
+  padding-left: 0.3rem;
+}
+
+.low-rating {
+  background-color: #BBE6E4;
 }
 
 .fa-star {

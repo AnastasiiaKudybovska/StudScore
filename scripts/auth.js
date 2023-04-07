@@ -1,0 +1,25 @@
+function authenticated() {
+    const cookies = Object.fromEntries(document.cookie.split('; ')
+        .map((c) => c.split('=')));
+    const token = cookies.token;
+
+    return token;
+  }
+
+  function parseJwt (token) {
+    
+    var base64Url = token.split('.')[1];
+
+    if(!base64Url) return 
+    var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    var jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+}
+
+if (!authenticated()){
+   window.location.href = 'index.html';
+}
+

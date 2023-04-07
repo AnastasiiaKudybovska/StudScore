@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <title>StudScore</title>
@@ -20,8 +20,8 @@
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <div class="logo-cont logo">
             <h1 class="logo-text">StudScore</h1>
-            <h2 class="username-block">Кудибовська Анастасія
-                <p class="rating-mark-block">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
+            <h2 class="username-block"> <p id="firstlastname">Кудибовська Анастасія</p>
+                <div class="rating-mark-block"><p  id="rating-mark" >92.975</p> <i class="fa fa-star" aria-hidden="true"></i></div>
             </h2>
         </div>
         <nav class="custom-navb">
@@ -61,12 +61,12 @@
                     <div class="rat-title-cont">
                         <h2 class="h2-place">Таблиця лідерів</h2>
                         <div class="button-block">
-                            <button class="active" data-target="#group-rating">Група</button>
-                            <button data-target="#stream-rating">Потік</button>
+                            <button class="active" data-target="#group-rating" id="btn-group">Група</button>
+                            <button data-target="#stream-rating" id="btn-stream">Потік</button>
                         </div>
                     </div>
                     <hr/>
-                    <div class="stud-rat">
+                    <div class="stud-rat rating active" id="group-rating">
                         <ol>
                             <div class="self-stud-rat">
                                 <li>Гончаренко Артем</li>
@@ -206,17 +206,19 @@
                         
                     </div>   
 
+
                 </div>
             </div>
+            
             <div class="main-stat-rat-subcont">
                 <div class="rat-title-cont">
                     <h2 class="h2-place">Оцінки</h2>
                 </div>
                 <hr/>
-                <div class="stud-rat">
+                <div class="stud-rat" id="myMarks">
                     <div class="stud-mark-day">
                         <h2>22.01.2023</h2>
-                        <div class="mark-day-box">
+                        <div class="mark-day-box" id="mark-day-box">
                             <div class="mark-day-box-text">
                                 <p>Веб-технології та веб-дизайн</p>
                                 <p>Пшеничний О. Ю.</p>
@@ -335,7 +337,11 @@
           </div>
         </div>
   </footer>
-   
-    
+  <script src="scripts/constants.js"></script>
+  <script src="scripts/customAlert.js"></script>
+  <script src="scripts/auth.js"></script>
+  <script src="scripts/userheader.js"></script>
+  <script src="scripts/getMarks.js"></script>
+  <script src="scripts/getRating.js"></script>
 </body>
 </html>

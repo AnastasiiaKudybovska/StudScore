@@ -43,14 +43,14 @@
                     <h2 class="h2-place">Місце у групі</h2>
                     <div style="filter:drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.2)) drop-shadow( 0px 7px 9px  rgba(0, 0, 0, 0.14));">
                     <div class="place-wrap">
-                        <p>3</p>
+                        <p id="placeInGroupRating">3</p>
                     </div></div>
                 </div>
                 <div class="main-stat-subcont">
                     <h2 class="h2-place">Місце на потоці</h2>
                     <div style="filter:drop-shadow( 0px 4px 4px rgba(0, 0, 0, 0.2)) drop-shadow( 0px 7px 9px  rgba(0, 0, 0, 0.14));">
                         <div class="place-wrap wr2" style="background: #FF66B3;">
-                            <p>17</p>
+                            <p id="placeInSteamRating">17</p>
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,25 @@
                         </ol>
                         
                     </div>   
-
+                    <div class="stud-rat rating" id="stream-rating">
+                        <ol>
+                            <div class="self-stud-rat">
+                                <li>Гончаренко Артем</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">97.933 <i class="fa fa-star" aria-hidden="true"></i></p>  
+                                </div>    
+                            </div>
+                            <div class="self-stud-rat">
+                                <li>Шевченко Олексій</li>
+                                <div class="mark-div">
+                                    <p class="rating-mark-block0">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
+                                    <p class="rating-mark-block0">95.833 <i class="fa fa-star" aria-hidden="true"></i></p>
+                                </div>    
+                            </div>
+                        </ol>
+                        
+                    </div>   
 
                 </div>
             </div>
@@ -278,13 +296,14 @@
         <div class="stat-chart-subcont">
             <div class="rat-title-cont">
                 <h2 class="h2-place">Середній бал</h2>
-                <div class="stat-chart-mark">
+                <div class="stat-chart-mark" id="stat-chart-mark-id">
                     <p class="rating-mark-block">92.975 <i class="fa fa-star" aria-hidden="true"></i></p>
                     <p class="rating-mark-block">5.0 <i class="fas fa-gem" aria-hidden="true"></i></p>
                 </div>
                 
             </div><hr/>
-            <img src="images/average-marks.PNG" alt="chart">
+            <canvas id="myChart"></canvas>
+            <!-- <img src="images/average-marks.PNG" alt="chart"> -->
         </div>
     </div>
     <footer class="site-footer">
@@ -327,7 +346,7 @@
   
             <div class="col-md-4 col-sm-6 col-xs-12">
               <ul class="social-icons">
-                <li><a class="github" href="#"><i class="fa fa-github" ></i></a></li>
+                <li><a class="github" href="https://github.com/AnastasiiaKudybovska/StudScore"><i class="fa fa-github" ></i></a></li>
                 <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
                 <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
@@ -343,5 +362,7 @@
   <script src="scripts/userheader.js"></script>
   <script src="scripts/getMarks.js"></script>
   <script src="scripts/getRating.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts/getCharts.js"></script>
 </body>
 </html>

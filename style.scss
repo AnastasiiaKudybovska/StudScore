@@ -333,7 +333,7 @@
 
 .rating-mark-block{
   padding: 0.35rem $base-padding;
-  margin: 0 $base-margin;
+  margin: 0 1rem;
   font-weight: bold;
   font-family: $font-stack;
   background-color: $primary-color;
@@ -344,12 +344,14 @@
   transition: box-shadow 0.3s;
   color: $dark-color;
   display: flex;
-  align-items: center;
+  justify-content: center; 
+  align-items: center; 
   @media screen and (max-width: 620px) {
     font-size: 0.95rem;
   }
   i{
     padding-left: 0.3rem;
+    
   }
   
 }
@@ -357,6 +359,8 @@
   background-color: $primary-color;
 }
   .fa-star{
+    position: relative;
+
     color: $accent-color;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: $dark-color;
@@ -678,7 +682,14 @@ main{
         flex-direction: column;
       }
     }
-    
+    .rating {
+      display: none;
+      
+      &.active {
+        display: block;
+     }
+    }
+      
     .stud-rat{
       height: 25.5rem;
       overflow-y: scroll;
@@ -710,9 +721,28 @@ main{
           flex:4%;
           display: flex;
           flex-direction: row;
-          justify-content: flex-start;
           align-items: center;
           flex-wrap: wrap;
+          justify-content: space-evenly;
+          .rating_mark_in_r{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: right;
+            p{
+               margin-bottom: 0;
+            }
+            .fa-star{
+              //position: absolute;
+              //right: 0;
+              //top: 3px;
+              //padding-left: 10px;
+              //padding-right: 10px;
+              padding-left: 0.3rem;
+            }
+          }
         }
         .rating-mark-block0{
           padding: 0.1rem $base-padding;
@@ -735,6 +765,7 @@ main{
           background-color: $primary-color;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 20px;
           transition: box-shadow 0.3s;
+          
           
         }
         .rating-mark-block3{
@@ -790,6 +821,9 @@ main{
           .bad-m-icon{
               background-color: $primary-color2;
             }
+          .middle-m-icon{
+            background-color: #ffd7ba;
+          }
         }
       }
     }
@@ -886,6 +920,7 @@ body{
     padding: 9rem 0 4rem 0;
   .stat-chart-subcont{
     animation: fadeIn 3s;
+    width: 65%;
     @extend .main-stat-subcont;
     .rat-title-cont{
       display: flex;
@@ -896,6 +931,9 @@ body{
       @media screen and (max-width:466px){
         flex-direction: column;
       }
+    }
+    #myChart{
+      margin: 2rem 3rem;
     }
     .stat-chart-mark{
       display: flex;
@@ -1263,6 +1301,7 @@ body{
       border-radius: $base-border-radius;
      
     }
+
     &:hover::after{
       background-color: $accent-color2;
       transition: 1s;
@@ -1278,7 +1317,26 @@ body{
   }
   
   }
+  .button-update{
+    flex-direction: column;
+    text-align: end;
+    justify-content: flex-end;
+    align-items: end;
+  }
+  #changePassBtn{
+    margin-top: 0;
+  }
+}
 
+#error_changepass_text{
+    text-align: end;
+    @include ordinary-text();
+    font-size: 1.1rem;
+    padding: 0.15rem $base-padding;
+    color: $accent-color;
+    .ch_pass_ok{
+      color: $dark-color;
+    }
 }
 .px-4 {
   padding-right: 1.5rem !important;

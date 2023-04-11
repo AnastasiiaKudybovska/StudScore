@@ -40,7 +40,9 @@ obtainUser().then(() => {
                     <p>${mark["subject"].name}</p>
                     <p>${mark["teacher"]["user"].last_name} ${mark["teacher"]["user"].first_name}</p>
                 </div>
-                <p class="rating-mark-block  ${mark.mark < 3 ? 'bad-m-icon' : ''}" >${mark.mark}.0<i class="fas fa-gem" aria-hidden="true"></i></p>
+                <p class="rating-mark-block ${mark.mark < 3 ? 'bad-m-icon' : mark.mark === 3 ? 'middle-m-icon' : ''}">
+                  ${mark.mark}.0<i class="fas fa-gem" aria-hidden="true"></i>
+                </p>
                 </div>
                 </div>
                 `;         

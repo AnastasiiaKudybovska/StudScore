@@ -28,7 +28,6 @@ getRatingMark();
           const firstlastname = document.querySelector('#firstlastname');
           firstlastname.textContent = data.last_name + " " +  data.first_name
           user_id = data.id_user
-
         })
         .catch((error) => {
           showAlert(error.message);
@@ -54,8 +53,8 @@ getRatingMark();
         })
         .then((data) => {
           // console.log(data)
-          const firstlastname = document.querySelector('#rating-mark');
-          firstlastname.textContent = data
+          const rating_mark = document.querySelector('#rating-mark');
+          rating_mark.textContent = data;
         })
         .catch((error) => {
           showAlert(error.message);
